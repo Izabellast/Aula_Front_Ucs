@@ -1,22 +1,22 @@
 :root {
-  --cor-fundo-escuro: #18110B;
-  --cor-fundo-claro: #FAF6F0;
-  --cor-fundo-card: #FFFFFF;
-  --cor-texto-principal: #2B2118;
-  --cor-texto-suave: #62564C;
-  --cor-texto-claro: #E2D9D0;
-  --cor-laranja: #E58B43;
-  --cor-laranja-hover: #D97734;
-  --cor-botao-escuro: #2B2118;
-  --cor-borda-suave: #EAE3D9;
-  --fonte-titulo: 'Lora', serif;
-  --fonte-corpo: 'Plus Jakarta Sans', sans-serif;
+  --cor-fundo-escuro: #18110b;
+  --cor-fundo-claro: #faf6f0;
+  --cor-fundo-card: #ffffff;
+  --cor-texto-principal: #2b2118;
+  --cor-texto-suave: #62564c;
+  --cor-texto-claro: #e2d9d0;
+  --cor-laranja: #e58b43;
+  --cor-laranja-hover: #d97734;
+  --cor-botao-escuro: #2b2118;
+  --cor-borda-suave: #eae3d9;
+  --fonte-titulo: "Lora", serif;
+  --fonte-corpo: "Plus Jakarta Sans", sans-serif;
 }
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -29,10 +29,10 @@ section {
 }
 
 body {
- font-family: var(--fonte-corpo);
- background-color: var(--cor-fundo-claro);
- color:var(--cor-texto-principal);
- line-height: 1.6;
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto-principal);
+  line-height: 1.6;
 }
 
 h1,
@@ -42,61 +42,61 @@ h3 {
 }
 
 .cabecalho {
- background-color: var(--cor-botao-escuro);
- padding: 20px 8%;
- display: flex;
- justify-content: space-between;
- align-items: center;
- position:sticky;
- top:0;
- z-index: 1000;
+  background-color: var(--cor-botao-escuro);
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
   font-family: var(--fonte-titulo);
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 700px;
   color: var(--cor-fundo-card);
   text-decoration: none;
 }
 
 .logo i {
- color: var(--cor-laranja);
- margin-left: 10px;
-
+  color: var(--cor-laranja);
+  margin-left: 10px;
 }
 
 .navegacao {
- display: flex;
- gap: 32px ; 
+  display: flex;
+  gap: 32px;
 }
 
 .navegacao a {
-  color: var(--cor-fundo-claro);
- text-decoration: none;
- font-size: 15px;
- font-weight: 500;
- padding-bottom: 4px;
+  color: var(--cor-fundo-card);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 4px;
 }
 
 .navegacao a:hover,
 .navegacao a.active {
   color: var(--cor-fundo-card);
   border-bottom: 2px solid var(--cor-laranja);
- 
 }
 
-.destaque { 
- background-color: var(--cor-fundo-escuro);
- background-image: linear-gradient(90deg, rgba(0,0,0,0.50), rgba(255,255,255,0.25)), url(https://images.unsplash.com/photo-1611065855673-fe8ae91ff456?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
- background-position: center right;
- min-height: 440px;
- background-size: cover;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: flex-start;
- padding: 64px 8%;
+.destaque {
+  background-color: var(--cor-fundo-escuro);
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=3274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center right;
+  min-height: 440px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 8%;
 }
 
 .destaque h1 {
@@ -107,47 +107,44 @@ h3 {
 }
 
 .destaque h1 .destaque-texto {
-color: var(--cor-laranja);
+  color: var(--cor-laranja);
 }
 
 .frase-efeito {
- font-size: 18px;
- color: var(--cor-fundo-claro);
- font-size: italic;
- margin-bottom: 32px;
+  font-size: 18px;
+  color: var(--cor-texto-claro);
+  font-style: italic;
+  margin-bottom: 32px;
 }
 
 .botao {
- display: inline-block;
- padding: 12px 28px;
- border-radius: 30px;
- font-family: var(--fonte-corpo);
- text-decoration: none;
- font-size: 14px;
- font-weight: 700;
- cursor: pointer;
- text-align: center;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-family: var(--fonte-corpo);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
 }
 
 .botao-primario {
- background-color: var(--cor-laranja);
- color: var(--cor-botao-escuro);
-
+  background-color: var(--cor-laranja);
+  color: var(--cor-botao-escuro);
 }
 
 .botao-primario:hover {
   background-color: var(--cor-laranja-hover);
- 
 }
 
 .botao-secundario {
   background-color: var(--cor-botao-escuro);
   color: var(--cor-fundo-card);
- 
 }
 
 .titulo-secao {
-  font-size: 15px;
+  font-size: 35px;
   color: var(--cor-fundo-escuro);
   text-align: center;
   margin-bottom: 40px;
@@ -155,15 +152,15 @@ color: var(--cor-laranja);
 }
 
 .titulo-secao.texto-esquerda {
- text-align: left;
+  text-align: left;
 }
 
 .favoritos {
- display:flex;
- padding: 54px 8%;
- flex-wrap: wrap;
- gap: 29px;
- justify-content: center;
+  display: flex;
+  padding: 54px 8%;
+  flex-wrap: wrap;
+  gap: 29px;
+  justify-content: center;
 }
 
 .card {
@@ -177,13 +174,13 @@ color: var(--cor-laranja);
 }
 
 .card img {
- width: 130px;
- height: 100%;
- object-fit: cover;
+  width: 130px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-conteudo {
-  padding: 20px 10%;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,38 +190,36 @@ color: var(--cor-laranja);
   font-size: 20px;
   color: var(--cor-fundo-escuro);
   margin-bottom: 6px;
-  
 }
 
 .card-conteudo p {
- font-size: 14px;
- color: var(--cor-texto-suave);
- margin-bottom: 13px;
+  font-size: 14px;
+  color: var(--cor-texto-suave);
+  margin-bottom: 13px;
 }
 
 .card-conteudo .preco {
   font-size: 18px;
-  font-weight: 18px;
+  font-weight: 700;
   color: var(--cor-laranja-hover);
 }
 
 .sobre {
-  padding: 64px 8%;
+  padding: 54px 8%;
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
   gap: 56px;
   align-items: center;
 }
 
 .sobre-info {
- flex: 1;
- min-width: 280px;
+  flex: 1;
+  min-height: 280px;
 }
 
 .sobre-info p {
- color: var(--cor-texto-principal);
- font-size: 16px;
- margin: 19px 29px;
+  color: var(--cor-texto-principal);
+  font-size: 19px 29px;
 }
 
 .sobre-imagem {
@@ -245,7 +240,7 @@ color: var(--cor-laranja);
 }
 
 .contato-subtitulo {
-  text-align: center;  
+  text-align: center;
   color: var(--cor-texto-suave);
   margin-top: -29px;
   margin-bottom: 40px;
@@ -253,32 +248,31 @@ color: var(--cor-laranja);
 }
 
 .formulario-contato {
- max-width: 580px;
- margin: 0 auto;
- background-color: var(--cor-fundo-card);
- padding: 40px;
- border-radius: 16px;
- border: 1px solid var(--cor-borda-suave);
- display: flex;
- flex-direction: column;
- gap: 12px;
-
+  max-width: 580px;
+  margin: 0 auto;
+  background-color: var(--cor-fundo-card);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid var(--cor-borda-suave);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .formulario-contato label {
- font-size: 14px;
- font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .formulario-contato input,
 .formulario-contato textarea {
- width: 100%;
- padding: 12px 14px;
- border: 1px solid var(--cor-borda-suave);
- border-radius: 8px;
- font-size: 15px;
- color: var(--cor-texto-principal);
- margin-bottom: 8px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--cor-borda-suave);
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--cor-texto-principal);
+  margin-bottom: 8px;
 }
 
 .formulario-contato input:focus,
@@ -286,18 +280,16 @@ color: var(--cor-laranja);
   outline: none;
   border-color: var(--cor-laranja);
   background-color: var(--cor-borda-suave);
- 
 }
 
 .botao-enviar {
-  margin-top: 10px;
+  margin-top: 12px;
   padding: 14px;
 }
 
 .rodape {
   background-color: var(--cor-fundo-escuro);
   color: var(--cor-texto-claro);
-  padding: 40px 8%;  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -348,31 +340,30 @@ color: var(--cor-laranja);
   }
 
   .destaque {
-    padding: 48px 5%;
-
+    font-size: 48px 5%;
   }
 
   .destaque h1 {
-    font-size: 35px
+    font-size: 35px;
   }
 
   .favoritos,
   .sobre,
   .contato {
     padding: 48px 5%;
-  
   }
 
   .card {
-   flex-direction: column;
+    flex-direction: column;
   }
 
   .card img {
-  width: 100%;
-  height: 170%;
+    width: 100%;
+    height: 170px;
   }
 
   .rodape {
-    
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
